@@ -1,0 +1,215 @@
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #0099cc, #f2f7ff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.loginbuttons{
+  margin-left: 1000px;
+  margin-bottom: 500px;
+}
+
+#logo{
+  color:black;
+  font-size: 30px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-bottom: 50px;
+
+}
+#appContainer {
+  width: 430px;
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#appContainer:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Search Section */
+#searchContainer {
+  margin-bottom: 20px;
+}
+
+#cityInput {
+  padding: 5px;
+  width: 350px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+#cityInput:focus {
+  border: 2px solid #0099cc;
+}
+
+#fetchWeatherBtn {
+  padding: 10px 20px;
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#fetchWeatherBtn:hover {
+  background-color: #0077aa;
+  transform: scale(1.1);
+}
+
+/* Weather Details Section */
+#weatherDetails {
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease;
+  
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+}
+
+.info-button {
+  margin: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #0099cc;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-button:hover {
+  background-color: #0077aa;
+  transform: translateY(-3px);
+}
+
+/* Details Section */
+#detailsSection {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease forwards;
+
+
+}
+
+#detailsSection h3 {
+  color: #0099cc;
+  font-size: 24px;
+  margin-bottom: 1px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #e65c50;
+  transform: translateY(-3px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom:10px;
+  padding-bottom: 25px;
+  margin-left: 600px;
+}
+
+.auth-buttons a {
+  background-color: #007bff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.auth-buttons a:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown Menu */
+.dropdown-toggle {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  background-color: #0056b3;
+}
+.dropdown-menu {
+  background-color: #343a40;
+  border-radius: 5px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+}
+.dropdown-menu li a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-menu li a:hover {
+  background-color: #007bff;
+}

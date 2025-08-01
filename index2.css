@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  /* App Container */
+  #appContainer {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar */
+  #navbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    background-color: #4A90E2;
+    color: white;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  #navbar #logo {
+  
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+  }
+  
+  #navbar ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Form Container */
+  .form-container {
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 8px;
+  }
+  
+  .form-group input:focus {
+    border-color: #4A90E2;
+    outline: none;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #357ABD;
+  }
+  
+  /* Links */
+  p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  p a {
+    color: #4A90E2;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    #appContainer {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
